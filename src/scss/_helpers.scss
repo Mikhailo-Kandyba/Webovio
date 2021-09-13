@@ -1,0 +1,56 @@
+@import "mixin";
+@import "variables";
+
+.btn_yellow {
+  color: $yellow;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 6px solid $yellow;
+    border-bottom: 5px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    bottom: 3px;
+    right: 0;
+    height: 1px;
+    background: $yellow;
+  }
+}
+
+.margin-bottom_120 {
+  margin-bottom: 120px;
+}
+
+.max-width_475 {
+  max-width: 475px;
+}
+
+.max-width_455 {
+  max-width: 455px;
+}
+
+.margin-bottom_90 {
+  margin-bottom: 90px;
+}
+
+.background_white {
+  background: $white;
+}
+
+.position_r {
+  position: relative;
+  left: -60px;
+  top: -30px;
+}
+
+
